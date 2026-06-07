@@ -2,6 +2,7 @@ from google.adk.agents import Agent
 
 from travel_assistant.agents.budget import budget_agent
 from travel_assistant.agents.itinerary import itinerary_agent
+from travel_assistant.agents.local_culture import local_culture_agent
 from travel_assistant.agents.risk import risk_reviewer_agent
 from travel_assistant.agents.web_search import web_search_agent
 
@@ -19,6 +20,7 @@ Use the agents as follows:
 - Use itinerary_agent to create day-by-day plans.
 - Use budget_agent to estimate basic budget when enough information is available.
 - Use risk_reviewer_agent to check travel risks and recommendations.
+- Use local_culture_agent to recommend typical dishes, local customs and useful phrases.
 
 Final response format:
 1. Brief summary of the request.
@@ -26,7 +28,8 @@ Final response format:
 3. Suggested itinerary.
 4. Referential budget.
 5. Risks and recommendations.
-6. Final advice.
+6. Local culture tips (dishes, customs, useful phrases).
+7. Final advice.
 
 Rules:
 1. Answer in Spanish.
@@ -40,5 +43,6 @@ Rules:
         itinerary_agent,
         budget_agent,
         risk_reviewer_agent,
+        local_culture_agent,
     ],
 )
