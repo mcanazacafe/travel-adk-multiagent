@@ -9,6 +9,7 @@ Laboratorio UCV de sistema multiagente de viajes con Google ADK.
 - Itinerary Agent
 - Budget Agent
 - Risk Reviewer Agent
+- Local Culture Agent
 
 ## Instalación
 
@@ -56,3 +57,10 @@ poetry run pytest
 ```bash
 poetry run ruff check .
 ```
+
+## Reto: Local Culture Agent
+
+El `local_culture_agent` recomienda platos típicos, explica costumbres locales
+y sugiere frases útiles para el viajero según el destino. Está integrado como
+subagente del Travel Coordinator Agent y usa la tool
+`get_local_culture_tips` (probada en `tests/test_culture_tools.py`).
